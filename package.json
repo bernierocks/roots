@@ -80,8 +80,6 @@
   },
   "preferGlobal": true,
   "scripts": {
-    "prepublish": "cp -R lib src; coffee -c lib; find lib -iname \"*.coffee\" -exec rm '{}' ';'",
-    "postpublish": "rm -rf lib; mv src lib",
     "test": "mocha"
   }
 }
